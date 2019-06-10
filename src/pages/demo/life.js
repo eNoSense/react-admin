@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Child from './child'
+import Child from "./child";
+import "./index.less"
 
 export default class Life extends Component {
   constructor(props) {
@@ -24,12 +25,12 @@ export default class Life extends Component {
       padding: 10
     };
     return (
-      <div style={style}>
+      <div style={style} className="container">
         <p>React 生命周期介绍</p>
         <button onClick={this.handleAdd}>点击一下</button>
         <button onClick={this.handleClick.bind(this)}>点击一下</button>
         <p>{this.state.count}</p>
-        <Child name={`gua${this.state.count}`}></Child>
+        <Child name={`gua${this.state.count}`} />
       </div>
     );
   }
