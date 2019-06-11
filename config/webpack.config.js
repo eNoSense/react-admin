@@ -470,7 +470,7 @@ module.exports = function(webpackEnv) {
                   loader: "less-loader",
                   options: {
                     modifyVars: {
-                      '@primary-color': '#F46258',　　//修改antd主题色
+                      '@primary-color': '#3C8DBC',　　//修改antd主题色
                     },
                     javascriptEnabled: true
                   }
