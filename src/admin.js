@@ -7,9 +7,6 @@ import "./style/common.less";
 
 export default class Admin extends Component {
   render() {
-    var style = {
-     
-    }
 
     return (
       <Row className="container">
