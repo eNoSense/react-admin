@@ -1,5 +1,3 @@
-
-
 const fs = require("fs");
 const isWsl = require("is-wsl");
 const path = require("path");
@@ -355,7 +353,8 @@ module.exports = function(webpackEnv) {
                         }
                       }
                     }
-                  ]
+                  ],
+                  ["import", { libraryName: "antd", style: true }]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
@@ -459,13 +458,24 @@ module.exports = function(webpackEnv) {
             {
               test: lessRegex,
               exclude: lessModuleRegex,
-              use: getStyleLoaders(
+              use: [
+                ...getStyleLoaders(
+                  {
+                    importLoaders: 2,
+                    sourceMap: isEnvProduction && shouldUseSourceMap
+                  },
+                  "less-loader"
+                ),
                 {
-                  importLoaders: 2,
-                  sourceMap: isEnvProduction && shouldUseSourceMap
-                },
-                "less-loader"
-              ),
+                  loader: "less-loader",
+                  options: {
+                    modifyVars: {
+                      '@primary-color': '#F46258',　　//修改antd主题色
+                    },
+                    javascriptEnabled: true
+                  }
+                }
+              ],
               sideEffects: true
             },
             {
