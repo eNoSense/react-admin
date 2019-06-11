@@ -4,38 +4,6 @@ const menuList = [
     key: "/admin/home"
   },
   {
-    title: "资产管理",
-    key: "/asset",
-    children: [
-      {
-        title: "普通查询",
-        key: "/asset/normalQuery"
-      },
-      {
-        title: "高级查询",
-        key: "/asset/advancedQuery"
-      },
-      {
-        title: "资产转移",
-        key: "/asset/transfer"
-      }
-    ]
-  },
-  {
-    title: "库存管理",
-    key: "/stock",
-    children: [
-      {
-        title: "资产入库",
-        key: "/stock/storage"
-      },
-      {
-        title: "资产出库",
-        key: "/stock/release"
-      }
-    ]
-  },
-  {
     title: "UI",
     key: "/ui",
     children: [

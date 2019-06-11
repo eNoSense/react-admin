@@ -33,9 +33,8 @@ export default class Aside extends Component {
       <aside>
         <div className="logo">
           <img src="/assets/logo.png" alt="logo" />
-          <h1>IT-资产管理系统</h1>
+          <h1>瓜</h1>
         </div>
-
         <Menu theme="dark">{this.state.MenuTreeNode}</Menu>
       </aside>
     );
