@@ -27,7 +27,7 @@ export default class Home extends Component {
         </ul>
         <hr/>
         <Switch>
-          <Route path="/" component={Main} />
+          <Route exact path="/" component={Main} />
           <Route path="/about" component={About} />
           <Route path="/topic" component={Topic} />
         </Switch>
