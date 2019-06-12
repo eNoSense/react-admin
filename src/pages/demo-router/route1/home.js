@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 import About from "./about";
 import Topic from "./topic";
 import Main from "./main";
@@ -26,9 +26,11 @@ export default class Home extends Component {
           </li>
         </ul>
         <hr/>
-        <Route exact path="/" component={Main} />
-        <Route path="/about" component={About} />
-        <Route path="/topic" component={Topic} />
+        <Switch>
+          <Route path="/" component={Main} />
+          <Route path="/about" component={About} />
+          <Route path="/topic" component={Topic} />
+        </Switch>
       </HashRouter>
     );
   }
