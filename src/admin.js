@@ -3,11 +3,11 @@ import { Row, Col } from "antd";
 import Aside from "./component/aside";
 import Header from "./component/header";
 import Footer from "./component/footer";
+import Home from "./pages/home";
 import "./style/common.less";
 
 export default class Admin extends Component {
   render() {
-
     return (
       <Row className="container">
         <Col span={3} className="aside">
@@ -17,8 +17,8 @@ export default class Admin extends Component {
           <Header />
 
           <Row className="content">
-            content
-            {this.props.children}
+            <Home />
+            {/* {this.props.children} */}
           </Row>
 
           <Footer />
