@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Button } from "antd";
 import Util from "./../../utils/utils";
 import Axios from './../../axios'
 import "./index.less";
@@ -44,7 +44,7 @@ export default class Header extends Component {
         <Row className="header-top">
           <Col span={24}>
             <span>欢迎, {this.state.userName}</span>
-            <a href="#">退出</a>
+            <Button type="link">退出</Button>
           </Col>
         </Row>
         <Row className="breadcrumb">
