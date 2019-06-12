@@ -16,7 +16,18 @@
     padding: 0 20px;
     border-top: 1px solid #3c8dbc;
     &-title {
+      font-size: @title-size;
       text-align: center;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        left: 100px;
+        top: calc(100% - 1px);
+        border-top: 10px solid @white;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
     }
     .weather {
       text-align: right;
