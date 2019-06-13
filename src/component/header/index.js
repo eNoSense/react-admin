@@ -10,16 +10,21 @@ export default class Header extends Component {
   }
   
   componentWillMount() {
-    this.setState({
-      userName: "瓜坤"
-    });
-    setInterval(() => {
+    const timer = setInterval(() => {
       const sysTime = Util.formatDate(new Date().getTime());
       this.setState({
         sysTime
       });
     }, 1000);
+    this.setState({
+      userName: "瓜坤",
+      timer
+    });
     // this.getWeatherAPIData()
+  }
+
+  componentWillUnmount() {
+    window.clearTimeout(this.state.timer)
   }
 
   getWeatherAPIData() {

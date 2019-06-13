@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./index.less";
 
-export default class Example extends Component {
+export default class Login extends Component {
   render() {
     return (
-      <div>gua</div>
+      <p>gua</p>
     )
   }
 }

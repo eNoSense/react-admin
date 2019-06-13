@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { Menu } from "antd";
 import MenuConfig from "./../../config/menuConfig";
 import "./index.less";
 const SubMenu = Menu.SubMenu;
-// const MenuItemGroup = Menu.ItemGroup
 
 export default class Aside extends Component {
   componentWillMount() {
@@ -24,7 +24,11 @@ export default class Aside extends Component {
           </SubMenu>
         );
       }
-      return <Menu.Item key={item.key}>{item.title}</Menu.Item>;
+      return (
+        <Menu.Item key={item.key}>
+          <NavLink to={item.key}>{item.title}</NavLink>
+        </Menu.Item>
+      );
     });
   };
 

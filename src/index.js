@@ -3,7 +3,6 @@ import "react-app-polyfill/stable";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import Admin from "./admin";
-import Home from "./pages/demo-router/route2/router";
+import Router from './router'
 
-ReactDOM.render(<Home />, document.getElementById("root"));
+ReactDOM.render(<Router />, document.getElementById("root"));
