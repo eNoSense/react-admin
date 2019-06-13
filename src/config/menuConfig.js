@@ -16,8 +16,8 @@ export default [
         key: "/admin/ui/modals"
       },
       {
-        title: "Loading",
-        key: "/ui/loadings"
+        title: "Spins",
+        key: "/admin/ui/spins"
       },
       {
         title: "通知提醒",
