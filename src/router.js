@@ -16,8 +16,10 @@ export default class IRouter extends Component {
             path="/admin"
             component={() => (
               <Admin>
-                <Route path="/admin/ui/buttons" component={Button} />
-                <Route component={NoMatch} />
+                <Switch>
+                  <Route path="/admin/ui/buttons" component={Button} />
+                  <Route component={NoMatch} />
+                </Switch>
               </Admin>
             )}
           />
