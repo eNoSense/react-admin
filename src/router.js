@@ -4,7 +4,8 @@ import App from "./app";
 import Login from "./pages/login";
 import NoMatch from "./pages/404";
 import Admin from "./admin";
-import Button from "./pages/ui/buttons";
+import Buttons from "./pages/ui/buttons";
+import Modals from "./pages/ui/modals";
 
 export default class IRouter extends Component {
   render() {
@@ -17,7 +18,8 @@ export default class IRouter extends Component {
             component={() => (
               <Admin>
                 <Switch>
-                  <Route path="/admin/ui/buttons" component={Button} />
+                  <Route path="/admin/ui/modals" component={Modals} />
+                  <Route path="/admin/ui/buttons" component={Buttons} />
                   <Route component={NoMatch} />
                 </Switch>
               </Admin>

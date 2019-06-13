@@ -28,7 +28,7 @@ export default class Buttons extends Component {
 
   render() {
     return (
-      <div>
+      <div className="demo-wrapper">
         <Card title="基础按钮">
           <Button type="primary">主要按钮</Button>
           <Button>普通按钮</Button>
