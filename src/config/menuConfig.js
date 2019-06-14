@@ -29,7 +29,7 @@ export default [
       },
       {
         title: "Tab页签",
-        key: "/ui/tabs"
+        key: "/admin/ui/tabs"
       },
       {
         title: "图片画廊",
