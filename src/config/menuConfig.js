@@ -33,7 +33,7 @@ export default [
       },
       {
         title: "图片画廊",
-        key: "/ui/gallery"
+        key: "/admin/ui/gallerys"
       },
       {
         title: "轮播图",

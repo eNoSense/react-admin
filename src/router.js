@@ -10,6 +10,7 @@ import Spins from "./pages/ui/spins";
 import Notifications from "./pages/ui/notifications";
 import Messages from "./pages/ui/messages";
 import Tabs from "./pages/ui/tabs";
+import Gallerys from "./pages/ui/gallerys";
 
 export default class IRouter extends Component {
   render() {
@@ -22,6 +23,7 @@ export default class IRouter extends Component {
             component={() => (
               <Admin>
                 <Switch>
+                  <Route path="/admin/ui/gallerys" component={Gallerys} />
                   <Route path="/admin/ui/tabs" component={Tabs} />
                   <Route path="/admin/ui/messages" component={Messages} />
                   <Route path="/admin/ui/notifications" component={Notifications} />
