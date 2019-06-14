@@ -12,6 +12,8 @@ import Messages from "./pages/ui/messages";
 import Tabs from "./pages/ui/tabs";
 import Gallerys from "./pages/ui/gallerys";
 import Carousels from "./pages/ui/carousels";
+import LoginDemo from "./pages/form/login";
+import Register from "./pages/form/register";
 
 export default class IRouter extends Component {
   render() {
@@ -24,6 +26,8 @@ export default class IRouter extends Component {
             component={() => (
               <Admin>
                 <Switch>
+                  <Route path="/admin/form/register" component={Register} />
+                  <Route path="/admin/form/login" component={LoginDemo} />
                   <Route path="/admin/ui/carousels" component={Carousels} />
                   <Route path="/admin/ui/gallerys" component={Gallerys} />
                   <Route path="/admin/ui/tabs" component={Tabs} />
