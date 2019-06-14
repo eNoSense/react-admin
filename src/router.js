@@ -11,6 +11,7 @@ import Notifications from "./pages/ui/notifications";
 import Messages from "./pages/ui/messages";
 import Tabs from "./pages/ui/tabs";
 import Gallerys from "./pages/ui/gallerys";
+import Carousels from "./pages/ui/carousels";
 
 export default class IRouter extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class IRouter extends Component {
             component={() => (
               <Admin>
                 <Switch>
+                  <Route path="/admin/ui/carousels" component={Carousels} />
                   <Route path="/admin/ui/gallerys" component={Gallerys} />
                   <Route path="/admin/ui/tabs" component={Tabs} />
                   <Route path="/admin/ui/messages" component={Messages} />
