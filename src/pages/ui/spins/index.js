@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Card, Button, Spin, Icon, Alert } from "antd";
+import { Card, Spin, Icon, Alert } from "antd";
 import "./index.less";
 
-export default class Modals extends Component {
+export default class Spins extends Component {
   render() {
     const icon = <Icon type="plus" />;
     const iconLoading = <Icon type="loading" />;

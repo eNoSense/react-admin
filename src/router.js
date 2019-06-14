@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import App from "./app";
 import Login from "./pages/login";
 import NoMatch from "./pages/404";
@@ -7,6 +7,7 @@ import Admin from "./admin";
 import Buttons from "./pages/ui/buttons";
 import Modals from "./pages/ui/modals";
 import Spins from "./pages/ui/spins";
+import Notifications from "./pages/ui/notifications";
 
 export default class IRouter extends Component {
   render() {
@@ -19,6 +20,7 @@ export default class IRouter extends Component {
             component={() => (
               <Admin>
                 <Switch>
+                  <Route path="/admin/ui/notifications" component={Notifications} />
                   <Route path="/admin/ui/spins" component={Spins} />
                   <Route path="/admin/ui/modals" component={Modals} />
                   <Route path="/admin/ui/buttons" component={Buttons} />

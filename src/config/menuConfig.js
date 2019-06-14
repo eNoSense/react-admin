@@ -21,11 +21,11 @@ export default [
       },
       {
         title: "通知提醒",
-        key: "/ui/notification"
+        key: "/admin/ui/notifications"
       },
       {
         title: "全局Message",
-        key: "/ui/messages"
+        key: "/admin/ui/messages"
       },
       {
         title: "Tab页签",
