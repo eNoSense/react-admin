@@ -14,6 +14,8 @@ import Gallerys from "./pages/ui/gallerys";
 import Carousels from "./pages/ui/carousels";
 import LoginDemo from "./pages/form/login";
 import Register from "./pages/form/register";
+import BasicTable from "./pages/table/basic";
+import HighTable from "./pages/table/high";
 
 export default class IRouter extends Component {
   render() {
@@ -26,6 +28,8 @@ export default class IRouter extends Component {
             component={() => (
               <Admin>
                 <Switch>
+                  <Route path="/admin/table/basic" component={BasicTable} />
+                  <Route path="/admin/table/high" component={HighTable} />
                   <Route path="/admin/form/register" component={Register} />
                   <Route path="/admin/form/login" component={LoginDemo} />
                   <Route path="/admin/ui/carousels" component={Carousels} />
